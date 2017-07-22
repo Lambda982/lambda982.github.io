@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="-test," />
+  <meta name="keywords" content="SpringBoot,学习资料," />
 
 
 
@@ -51,24 +51,24 @@
 
 
 
-<meta name="description" content="主题:    测试Markdown
-标题测试
-一级标题二级标题三级标题四级标题五级标题六级标题">
+<meta name="description" content="前言之前SpringBoot的摸索，知道了SpringBoot使用起来及其简洁，在项目里本身就存在大量的配置，让使用者根本无需手动进行一些配置。当然在SpringBoot中也有一些可以通过手动来开启各种功能模块的配置，这里就要深入的了解一下SpringBoot的配置文件，application.properties。正文在创建SpringBoot项目的时候，他会生成一个全局的配置文件applica">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这是测试">
-<meta property="og:url" content="http://yoursite.com/2017/02/14/这是测试/index.html">
+<meta property="og:title" content="SpringBoot:(二)配置文件">
+<meta property="og:url" content="http://yoursite.com/2017/06/28/SpringBoot：(二)配置文件/index.html">
 <meta property="og:site_name" content="Ramuda's Blog">
-<meta property="og:description" content="主题:    测试Markdown
-标题测试
-一级标题二级标题三级标题四级标题五级标题六级标题">
-<meta property="og:image" content="http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg">
-<meta property="og:image" content="http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1">
-<meta property="og:updated_time" content="2017-06-27T10:33:01.987Z">
+<meta property="og:description" content="前言之前SpringBoot的摸索，知道了SpringBoot使用起来及其简洁，在项目里本身就存在大量的配置，让使用者根本无需手动进行一些配置。当然在SpringBoot中也有一些可以通过手动来开启各种功能模块的配置，这里就要深入的了解一下SpringBoot的配置文件，application.properties。正文在创建SpringBoot项目的时候，他会生成一个全局的配置文件applica">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE2.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE2.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE4.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE5.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE6.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE8.png">
+<meta property="og:image" content="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE7.png">
+<meta property="og:updated_time" content="2017-07-18T09:32:39.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="这是测试">
-<meta name="twitter:description" content="主题:    测试Markdown
-标题测试
-一级标题二级标题三级标题四级标题五级标题六级标题">
+<meta name="twitter:title" content="SpringBoot:(二)配置文件">
+<meta name="twitter:description" content="前言之前SpringBoot的摸索，知道了SpringBoot使用起来及其简洁，在项目里本身就存在大量的配置，让使用者根本无需手动进行一些配置。当然在SpringBoot中也有一些可以通过手动来开启各种功能模块的配置，这里就要深入的了解一下SpringBoot的配置文件，application.properties。正文在创建SpringBoot项目的时候，他会生成一个全局的配置文件applica">
 
 
 
@@ -80,7 +80,7 @@
   };
 </script>
 
-  <title> 这是测试 | Ramuda's Blog </title>
+  <title> SpringBoot:(二)配置文件 | Ramuda's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -220,7 +220,7 @@
             
             
               
-                这是测试
+                SpringBoot:(二)配置文件
               
             
           </h1>
@@ -229,8 +229,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2017-02-14T00:00:00+08:00" content="2017-02-14">
-              2017-02-14
+            <time itemprop="dateCreated" datetime="2017-06-28T00:00:00+08:00" content="2017-06-28">
+              2017-06-28
             </time>
           </span>
 
@@ -251,8 +251,8 @@
 
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/日志/二级目录/" itemprop="url" rel="index">
-                    <span itemprop="name">二级目录</span>
+                  <a href="/categories/日志/SpringBoot/" itemprop="url" rel="index">
+                    <span itemprop="name">SpringBoot</span>
                   </a>
                 </span>
 
@@ -280,49 +280,17 @@
       
 
       
-        <span itemprop="articleBody"><p>主题:<br>    测试Markdown</p>
-<p><strong>标题测试</strong></p>
-<h1 id="u4E00_u7EA7_u6807_u9898"><a href="#u4E00_u7EA7_u6807_u9898" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="u4E8C_u7EA7_u6807_u9898"><a href="#u4E8C_u7EA7_u6807_u9898" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="u4E09_u7EA7_u6807_u9898"><a href="#u4E09_u7EA7_u6807_u9898" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="u56DB_u7EA7_u6807_u9898"><a href="#u56DB_u7EA7_u6807_u9898" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="u4E94_u7EA7_u6807_u9898"><a href="#u4E94_u7EA7_u6807_u9898" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="u516D_u7EA7_u6807_u9898"><a href="#u516D_u7EA7_u6807_u9898" class="headerlink" title="六级标题"></a>六级标题</h6><a id="more"></a>
-<p>这样显示大标题<br>=</p>
-<p>也可以这样显示小标题<br>-</p>
-<hr>
-<p><strong>列表测试</strong></p>
-<ul>
-<li>文本1</li>
-<li>文本2</li>
-<li>文本3</li>
-</ul>
-<ol>
-<li>有序文本1</li>
-<li>有序文本2</li>
-<li>有序文本3</li>
-</ol>
-<p>这是嵌套列表</p>
-<ul>
-<li>这个是外层表<ul>
-<li>这个是内层</li>
-<li>还是内层</li>
-</ul>
-</li>
-<li>然后是外层</li>
-</ul>
-<hr>
-<p><strong>链接和图片测试</strong><br><a href="http://weibo.com" title="新浪微博" target="_blank" rel="external">微博</a><br><img src="http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg" alt="图片"></p>
-<hr>
-<p><strong>引用测试</strong></p>
-<blockquote>
-<p>在我们写作的时候经常需要引用他人的文字，这个时候引用这个格式就很有必要了，在 Markdown 中，你只需要在你希望引用的文字前面加上 &gt; 就好了</p>
-</blockquote>
-<hr>
-<p><strong>代码框测试</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">public static <span class="keyword">void</span> main (<span class="built_in">String</span>[] args)&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><strong>表格测试</strong><br>dog | bird | cat<br>—-|——|—-<br>foo | foo  | foo<br>bar | bar  | bar<br>baz | baz  | baz</p>
-<hr>
-<p><img src="http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1" alt=""></p>
-<hr>
-<p><strong>iframe</strong></p>
-<iframe src="http://ramuda.cn/" width="400" height="400" frameborder="0" allowfullscreen></iframe>
+        <span itemprop="articleBody"><font face="微软雅黑"><br><b><font size="5">前言</font></b><br>之前SpringBoot的摸索，知道了SpringBoot使用起来及其简洁，在项目里本身就存在大量的配置，让使用者根本无需手动进行一些配置。当然在SpringBoot中也有一些可以通过手动来开启各种功能模块的配置，这里就要深入的了解一下SpringBoot的配置文件，application.properties。<br><b><font size="5">正文</font></b><br>在创建SpringBoot项目的时候，他会生成一个全局的配置文件application.properties,放在src/main/resource目录下或者同路径的/config下。这个配置文件的作用就是对一些默认的配置功能进行修改。<br><br>—<br><font size="5"><b><center>自定义属性</center></b></font><br>在application.properties里面提供了自定义属性的支持,我们可以把一些常用的常量配置在这个里面:<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE.png" alt=""><br>然后在需要使用的地方可以通过注解@Value(value=”${config.name}”)来绑定到属性上面。<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE2.png" alt=""><br>启动项目后，就会打印出这些配置的常量。<br>然而有时候属性会很多嘛，一个一个绑定到字段上工作量也会很大。在这里官方提倡绑定一个对象bean，这里我们使用一个ConfigBean.java类，在顶部使用注解@ConfigurationProperties(prefix=”com.ram”)来指名使用哪个属性。<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE2.png" alt=""><br>然后在Spring Boot入口类加上@Enableconfiguration并且指名要加载的bean，如果不写ConfigBean.class,在bean类那边添加。<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE4.png" alt=""><br>然后在需要的Controller中引入ConfigBean<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE5.png" alt=""><br><br>—<br><font size="5"><b><center>参数间引用</center></b></font><br>在application.properties里面每个参数也是可以互相引用的:<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE6.png" alt=""><br>这里只需要控制好yeah这个属性就可以了。<br><br>—<br><font size="5"><b><center>自定义的配置文件</center></b></font><br>有时候不可能只在application.properties一个配置文件里面添加配置,这里可以使用自定义的配置文件来添加需要的配置,存放位置还是一样的在resource里面,这里我用的一个test.properties作为自己的自定义配置文件。<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE8.png" alt=""><br><br>这里我新建了一个Bean<br><img src="http://os1tb0xjr.bkt.clouddn.com/application%E9%85%8D%E7%BD%AE7.png" alt=""><br>这里需要注意添加@PropertySource来指定你的自定义文件。这是1.5版本之后，如果是1.5版本之前,那么要在@ConfigurationProperties里面添加一个locations来指定properties位置。<br><br>—<br><font size="5"><b><center>随机值配置</center></b></font><br>在配置文件中使用${random}可以生成不同类型的随机值,可以用来简化代码生成的问题,可以生成int、long、string等不同的数据<br><code>javascript
+ram.secret=${random.value}
+ram.number=${random.int}
+ram.bignumber=${random.long}
+ram.uuid=${random.uuid}
+ram.number.less.than.ten=${random.int(10)}
+ram.number.in.range=${random.int[1024,65536]}</code><br><br>—<br><font size="5"><b><center>外部配置-命令行参数配置</center></b></font>  
+
+
+
+<p></p></font>  <p></p>
 </span>
       
     </div>
@@ -331,7 +299,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/test/" rel="tag">#-test</a>
+            <a href="/tags/SpringBoot/" rel="tag">#SpringBoot</a>
+          
+            <a href="/tags/学习资料/" rel="tag">#学习资料</a>
           
         </div>
       
@@ -340,13 +310,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/06/24/SpringBoot：(一)了解入门/" rel="next" title="SpringBoot">
+                <i class="fa fa-chevron-left"></i> SpringBoot
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/06/24/SpringBoot：(一)了解入门/" rel="prev" title="SpringBoot">
-                SpringBoot <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -485,7 +455,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#u4E00_u7EA7_u6807_u9898"><span class="nav-number">1.</span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E8C_u7EA7_u6807_u9898"><span class="nav-number">1.1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E09_u7EA7_u6807_u9898"><span class="nav-number">1.1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u56DB_u7EA7_u6807_u9898"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#u4E94_u7EA7_u6807_u9898"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#u516D_u7EA7_u6807_u9898"><span class="nav-number">1.1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
